@@ -1,0 +1,23 @@
+<div>
+    Name    : {{object.name}}<br>
+    Pizza Type : {{object.Pizza_type}}<br>
+    Category : {{object.category}}<br>
+    Topping : {{object.topping}}<br>
+
+</div>
+<br>
+<div class="update">
+    <a href="{% url 'product:update' object.id %}">
+        <button type="button" class="update_btn">
+            Update
+        </button>
+    </a>
+</div>
+<br>
+<div class="delete">
+    <a href="{% url 'product:delete' object.id %}">
+        <button type="button" class="delete_btn">
+            Delete
+        </button>
+    </a>
+</div>
